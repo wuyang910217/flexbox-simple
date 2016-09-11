@@ -1,0 +1,30 @@
+.box1 { background-color: #f00; }
+.box2 { background-color: #1abc9c; }
+.box3 { background-color: #3498db; }
+.box4 { background-color: #34495e; }
+.box5 { background-color: #e67e22; }
+.box6 { background-color: #2ecc71; }
+.box7 { background-color: #f1c40f; }
+.box8 { background-color: #e74c3c; }
+.box9 { background-color: #222222; }
+.box10 { background-color: #16a086; }
+
+.container {
+  display: flex;
+  border: 4px solid goldenrod;
+  flex-flow: column wrap;
+  height: 100vh;
+}
+
+.box {
+  flex-basis: 200px;
+  font-size: 30px;
+  flex-grow: 1;
+}
+
+.box2 {
+  flex-grow: 4;
+}
+.box3 {
+  flex-basis: 100px;
+}

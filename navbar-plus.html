@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>navigation</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar-plus.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="top">
+            <h1><a href="#">What The Flexbox?</a></h1>
+        </header>
+        <div class="flex-nav">
+        <a href="#" class="toggleNav"><i class="fa fa-reorder"></i> 菜单</a>
+            <ul>
+                <li>
+                    <a href="#">首页</a></li>
+                <li>
+                    <a href="#">博客</a></li>
+                <li>
+                    <a href="#">文章列表</a></li>
+                <li>
+                    <a href="#">标签</a></li>
+                <li>
+                    <a href="#">其他</a></li>
+                <li>
+                    <a href="#">关于我</a></li>
+                <li class="social">
+                    <a href="#twitter">
+                        <i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#facebook">
+                        <i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#github">
+                        <i class="fa fa-github"></i></a>
+                </li>
+                <li class="social">
+                    <a href="#instagram">
+                        <i class="fa fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <section class="hero">
+            <img src="me.jpg" alt="">
+        </section>
+        <section class="details">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ea temporibus sapiente</p>
+            <p>consequatur saepe libero tempora dolores officia incidunt repudiandae, ad aliquam asperiores, quisquam! Quos quam nam nulla ad asperiores.</p>
+        </section>
+        <section class="signup">
+            <form action="" class="signup">
+                <input type="text" placeholder="你的名字">
+                <input type="email" placeholder="邮箱地址">
+                <input type="submit" value="立刻注册">
+            </form>
+        </section>
+        <footer>
+            <p>&copy; Wuyang</p>
+        </footer>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(function() {
+            console.log('---->');
+            $('.toggleNav').on('click',function(){
+                $('.flex-nav ul').toggleClass('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
